@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.row{
+    display:flex;
+    padding :10px;
+    justify-content:space-between;
+}
+.col{
+    width: 23% ;
+    border: 1px solid #c1c1c1;
+}
+p{
+    text-align:center;
+    }
+
+    /* media queries */
+    /* tablets */
+    @media screen and (min-width:768px) and (max-width:1023px){
+         .row{
+            flex-wrap:wrap;   
+         }
+        .col{
+            width: 48%;
+        }
+        p{
+            font-size: 14px;
+            color:blue;
+        }
+    }
+    @media screen and (max-width:767px){
+        .row{
+            flex-wrap:wrap;
+        }
+        .col{
+            width: 100%;
+        }
+        p{
+            font-size: 12px;
+            color:red;
+        }
+    }
