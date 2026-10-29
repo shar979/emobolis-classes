@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Commissioner:wght@100..900&family=Outfit:wght@100..900&family=Redaction+10:ital,wght@0,400;0,700;1,400&display=swap');
+/* root if you want to use them more than once */
+:root{
+--brand-green:#159957;
+--brand-dark: #1f2d3d;
+--soft-bg:#f4f8f7;
+}
+
+body{
+   color: var(--brand-dark);
+   font-family: "Commissioner", sans-serif;
+}
+
+.brand{
+    color :var(--brand-green);
+    font-size: 1.4rem;
+}
+
+#dark-title{
+    color:var(--brand-dark);
+}
+.brand:hover{
+    color:#064324;
+}
+.nav-link{
+    color: #536171;
+}
+
+.nav-link:hover,.nav-link.active{
+    color:var(--brand-green)!important;
+    /* important overwrites */
+}
+
+.btn-success{
+    background-color: var(--brand-green)!important;
+    border-color: var(--brand-green)!important;
+    border-radius: 0;
+    transition: background-color 3s,border-color 2s;
+}
+
+.btn-success:hover{
+    background-color: #055f32;
+    border-color: #055f32 !important;
+}
+
+.hero{
+    padding:3.5rem;
+    background: linear-gradient(120deg, #f7faf9,#edf3f1);}
+
+    .top-title{
+        color: var(--brand-green);
+        font-weight: 700;
+        
+    }
+    .hero h1{
+        line-height:1.2;
+    }
+    .section-heading h2{
+        margin-bottom: 0.4rem;
+              
+    }
+    .card{
+        border-color: #e5e9ec;
+        transition:transform 0.2s ease,box-shadow 0.2s ease;
+    }
+
+    /* https://cssgenerator.org/box-shadow-css-generator.html */
+    .card:hover{
+        transform: translateY(-8px)  scale(1.09);
+    box-shadow: 16px 12px 23px 0px rgba(125,123,128,0.72);
+-webkit-box-shadow: 16px 12px 23px 0px rgba(125,123,128,0.72);
+-moz-box-shadow: 16px 12px 23px 0px rgba(125,123,128,0.72);
+
+    }
+
+    .about-section{
+        background-color: var(--soft-bg);
+    }
+
+    .about-section i{
+        color: var(--brand-green);
+        font-size: 2.5rem;
+            }
+            /* TODO center */
+            .about-section p{
+                max-width: 600px;
+            margin: auto;
+            }
+
+            .footer{
+                background-color: #263342;
+                color: white;
+            }
+
+            .footer a{
+                color:white;
+                text-decoration :none;
+            }
+
+            .copyright{
+                background: #0e1217;
+            }
